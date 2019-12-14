@@ -146,7 +146,10 @@ public class Commands implements CommandExecutor
 
     public static int getRandomInt(int max)
     {
-        Random random = new Random();
-        return random.nextBoolean() ? random.nextInt(max) : -random.nextInt(max);
+        int[] temp=new int[new Random(System.nanoTime()).nextInt(101)+1];
+        for(int i=0;i<temp.length;i++)
+          temp[i]=new Random(System.nanoTime()+i+new Random(System.nanoTime()).nextInt(101)).nextInt(max+1);
+        return (new Random(System.nanoTime()+temp[new Random(System.nanoTime()).nextInt(temp.length)]).nextBoolean()?1:-1)*temp[new Random(System.nanoTime()).nextInt(temp.length)];
+
     }
 }
