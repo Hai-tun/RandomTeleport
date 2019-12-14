@@ -1,0 +1,9 @@
+elytra: "§cElytra"
+no-permission: '§4You do not have permission for this command'
+player-not-exists: '§4Target player %player% does not exist or is offline'
+cooling-down: '§4Random teleport is cooling down, please wait for %second% seconds'
+world-not-allow: '§4This world not allow Random teleport'
+now-random-teleporting: '§4You are now random teleporting'
+count-insufficient: '§4You random teleport count insufficient'
+title: '§fRandom Teleport'
+subtitle: '§cPlease press SPACE to enable elytra'

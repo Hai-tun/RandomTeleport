@@ -1,0 +1,28 @@
+name: RandomTeleport
+version: ${project.version}
+main: com.mcres.dolphin.randomteleport.Main
+api-version: '1.14'
+permissions:
+  randomteleport.command.randomteleport:
+    description: 'use randomteleport command'
+    default: true
+  randomteleport.command.randomteleport.others:
+    description: 'use randomteleport command for others'
+    default: op
+  randomteleport.counter.bypass:
+    description: 'bypass randomteleport counter'
+    default: op
+  randomteleport.cooldown.bypass:
+    description: 'bypass randomteleport cooldown'
+    default: op
+  randomteleport.world.limit.bypass:
+    description: 'bypass randomteleport world limit'
+    default: op
+commands:
+  randomteleport:
+    aliases:
+      - rt
+      - rtp
+    description: 'random teleport'
+    usage: '/randomteleport [player]'
+    permission: 'randomteleport.command.randomteleport'

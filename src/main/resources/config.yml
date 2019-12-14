@@ -1,0 +1,11 @@
+#
+cooldown: 30
+allow-worlds:
+- world
+reduce: 40000
+online-mode: false
+default-count: 1
+title:
+  fade-in: 0
+  stay: 100
+  fade-out: 0
